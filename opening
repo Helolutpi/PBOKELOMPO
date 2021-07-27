@@ -1,0 +1,6 @@
+
+<h1 align="center">Create Read Update Delete</h1>
+    <hr>
+    <button><a href="insert.php">Tambahkan</a></button>
+    
+    <button><a href="view.php">Tampilkan</a></button>

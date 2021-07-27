@@ -1,0 +1,28 @@
+<table>
+            <tr>
+                <td>Nama Product</td>
+                <td>:</td>
+                <td><input type="text" name="productName"></td>
+            </tr>
+            <tr>
+                <td>Deskripsi Product</td>
+                <td>:</td>
+                <td><textarea name="productDescription" id="" cols="22" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Harga Product</td>
+                <td>:</td>
+                <td><input type="number" name="productPrice"></td>
+            </tr>
+            <tr>
+                <td>Gambar Product</td>
+                <td>:</td>
+                <td><input type="file" name="productImage"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button>Simpan</button></td>
+            </tr>
+        </table>
+        punya fadhill
