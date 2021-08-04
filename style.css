@@ -148,6 +148,8 @@ body {
 }
 @media (max-width: 430px) {
     .kotak {
+        padding-top: 20px;
+        padding-bottom: 20px;
         width: 300px;
     }
  
