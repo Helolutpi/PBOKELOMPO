@@ -4,39 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="testlist.css">
+    <link rel="icon" href="Icon moon 1.png" >
     <title>View</title>
 </head>
-<body>
-    <h1>Tampilan Product</h1>
-    <?php
+<body style="background-color: #4362c7;"  >
+<header>
+    <nav class="navbar fixed-top navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">< Kembali</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+
+<?php
         include 'connect.php';
         $getProduct = $connection->query("SELECT * from product");
         while($fetchProduct = $getProduct->fetch_assoc()){
     ?>
+  
 
-    <table style="display:inline-table; width:150px">
-            <tr>
-                <td><img style="width:150%" src="<?= $fetchProduct["productImage"]?>"></td>
-            </tr>
-            <tr>
-                <td><strong><?=$fetchProduct["productName"]?></strong><br>
-                Rp <?=number_format($fetchProduct["productPrice"])?><br><br>
-                <?=$fetchProduct["productDescription"]?></td>
-            </tr>
-            <tr>
-                <td><a href="update.php?id=<?=$fetchProduct["productID"]?>"><button>Perbarui</button></a></td>
-                <td><a href="delete.php?id=<?=$fetchProduct["productID"]?>"><button>Hapus</button></a></td>
-            </tr>
-    </table>
 
-    <?php
+ <section class="list">  
+
+
+ <div class="product">
+ <div class="card">
+   
+
+         <div class="name">
+         <?=$fetchProduct["productName"]?>
+         </div>
+         <div class="image">
+            <img src="<?= $fetchProduct["productImage"]?>">
+         </div>
+         <div>
+             <p></p>
+         </div>
+         <div class="sec">
+         <div class="deks">
+             <div class="bold">
+             Deskripsi:
+             </div>
+             <p><?=$fetchProduct["productDescription"]?></p>
+             <div class="bold">
+             <p> Rp. <?=number_format($fetchProduct["productPrice"])?></p> 
+         </div>
+         </div>
+        </div>
+        <div>
+            <p></p>
+        </div>
+        <a href="update.php?id=<?=$fetchProduct["productID"]?>">
+        <button class="btn" >
+            Perbarui
+        
+        
+     
+
+        </button>
+        </a>
+        <div>
+            <p></p>
+        </div>
+        <a href="delete.php?id=<?=$fetchProduct["productID"]?>">
+        <button class="btn" >
+         
+        Hapus
+        
+    
+        </button>
+        </a>
+        
+           
+    </div>
+    </div>
+   
+   
+ </section>
+ 
+ 
+ <?php
         }
-    ?><table>
-        <tr>
-            <td>
-                <br><br><button><a href="index.php">Kembali</a></button>
-            </td>
-        </tr>
-    </table>
+    ?>
+</div>
+
+
+
+ 
+    
+
+
 </body>
 </html>
