@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(315deg, #2b1055, #FFF5FD);
+    background: linear-gradient(315deg,  #4362c7, #FFF5FD);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@ body {
     padding: 15px 20px;
     text-align: center;
     border: none;
-    background: #2b1055;
+    background: #fdcd2e;
     outline: none;
     border-radius: 30px;
     font-size: 1.2rem;
@@ -127,7 +127,7 @@ body {
     padding: 15px 20px;
     text-align: center;
     border: none;
-    background: #2b1055;
+    background: #fdcd2e;
     outline: none;
     border-radius: 30px;
     font-size: 1.2rem;
@@ -137,13 +137,14 @@ body {
 }
 
 
+
 .kotak .tombol-submit .btn:hover {
     transform: translateY(-5px);
-    background: #2b1055;
+    background: #fdcd2e;
 }
 .kotak .btn:hover {
     transform: translateY(-5px);
-    background: #2b1055;
+    background: #fdcd2e;
 }
 @media (max-width: 430px) {
     .kotak {

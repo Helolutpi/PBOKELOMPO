@@ -8,14 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-
+    <link rel="icon" href="Icon moon 1.png" >
 	<link rel="stylesheet" type="text/css" href="style.css">
     <title>Create</title>
 </head>
 <body>
-    
-    
+
+
+ 
     <div class="kotak">
+    
+        <a href="index.php">< Kembali</a>
+                    
+    
         <form action="doAddProduct.php" method="POST" enctype="multipart/form-data"class="form">
             <p class="judulweb" style="font-size: 2rem; font-weight: 800;">Menambahkan Barang</p>
 		        <div class="productName">
@@ -45,11 +50,8 @@
             unset($_SESSION["message"]);
         }
     ?>
-    <button>
-        <a href="index.php"class="btn">Kembali</a>
-                    
-    </button>
-
+    
+   
     </div>
 </body>
 </html>
