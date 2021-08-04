@@ -1,5 +1,5 @@
 <?php
-$connection = new mysqli("localhost", "root", "", "crudphp");
+$connection = new mysqli("remotemysql.com", "XkwJVNQUzH", "VUGrvlmbPE", "XkwJVNQUzH");
 
 if(!$connection){
     echo "Server not found";
